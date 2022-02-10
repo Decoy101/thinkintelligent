@@ -1,0 +1,67 @@
+.services .container{
+    margin-top: 90px;
+    min-height:60rem;
+    background: #171D1C;
+    text-align: center;
+    padding-top: 5%;
+    width: 100%;
+    height: 100%;
+}
+.services .container h1{
+    color: white;
+    font-size: 4rem;
+    padding: 5%;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+}
+.cards .card{
+    width: 20rem;
+    height: 15rem;
+    background-color: #fff;
+    margin:2%;
+    border-radius: 30px;
+    transition: all 0.5s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1%;
+}
+.cards .card h1{
+   font-size: 2rem;
+   color: rgb(32, 32, 32); 
+}
+.cards .card:hover{
+    transform: scale(1.2);
+}
+#videoP{
+    background: linear-gradient(to right top, #ee0979, #ff6a00)
+}
+#data{
+    background: linear-gradient(to right top,#A770EF,#CF8BF3,#FDB99B)
+}
+#digitalM{
+    background: linear-gradient(to right top, #00c3ff,#ffff1c);
+}
+#integratedM{
+    background: linear-gradient(to right top, #1D2B64,#F8CDDA);
+}
+#PlanBuy{
+    background: linear-gradient(to right top, #E55D87,#5FC3E4);
+}
+
+@media screen and (max-width:768px){
+
+    .services .container{
+        width: 100%;
+        min-height: calc(1250px - 50vw);
+        padding-top: 40%;
+    }
+    .cards .card{
+        width:40vw;
+        height:30vh;
+    }
+}
